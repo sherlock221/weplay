@@ -16,10 +16,10 @@
   </head>
   <body>
     <div id="game">
-      <img alt="game" src="data:image/png;base64,{{img}}" />
+      <img alt="game" src="data:image/png;base64,<%=img  %>" />
       <i title="You can control the game with your keyboard" class="keyboard icon-keyboard-1">&nbsp;</i>
       <span class="count-wrapper">
-        在线: <span class="count">{{connections}}</span>
+         在线: <span class="count"><%=connections %></span>
       </span>
       <table id="mov-keys" class="unjoined screen-keys">
         <tr>
@@ -56,7 +56,7 @@
 
     <script>
       config = {};
-      config.io = "{{{io}}}";
+      //config.io = "<%=io  %>";
     </script>
     <script src="/main.js"></script>
   </body>

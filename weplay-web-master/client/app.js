@@ -75,7 +75,7 @@ function join(data){
   $('body').addClass('joined');
   $('.input').addClass('joined');
   input
-  .attr('placeholder', '输入聊天...')
+  .attr('placeholder', '输入聊天内容...')
   .blur();
   joined = true;
 }

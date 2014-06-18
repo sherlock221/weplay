@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+//项目启动
+var debug = require('debug')('my-application');
+var app = require('../app');
+
+app.set('port', process.env.PORT || 3000);
+process.title = 'weplay-web';
+
+var server = app.listen(app.get('port'), function() {
+  debug('游戏云服务器启动  端口:' + server.address().port);
+  console.log('游戏云服务器启动 端口:' + server.address().port);
+});
